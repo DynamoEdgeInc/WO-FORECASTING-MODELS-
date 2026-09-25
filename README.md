@@ -4,4 +4,4 @@ This repo predicts how many tickets and work orders will come in each week for C
 
 The ticket model is in `Tickets_weekly_forecast_sarima_tuning.ipynb`, and the work order model is in `Workorders_weekly_forecast_sarima_tuning.ipynb`.
 
-The repo is organized under `WO and Ticket Forecasting Version 2`, which has two subfolders: Chile WO Forecasting and Chile Tkt Forecasting. Each subfolder has the same four things — a Python file with the model code, the ticket data, a saved model, and a workflow document.
+The repo is organized under `WO and Ticket Forecasting Version 2`, which has two subfolders: Chile WO Forecasting and Chile Tkt Forecasting. Each subfolder has the same four things : a Python file with the model code, the ticket data, a saved model, and a workflow document.
