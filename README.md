@@ -1,19 +1,7 @@
-Chile Work Order and Tickets Forecast
+# Chile Work Order and Tickets Forecast
 
-This repo predicts how many tickets and work orders will come in each week for Chile.
+This repo predicts how many tickets and work orders will come in each week for Chile. The data used is ticket data (`ticket_full.csv`), covering the period from 26 Dec 2024 to 30 Aug 2026. The ticket model uses all entries in this data, while the work order model uses only the entries where `has_work_order = Y`.
 
-Data used: ticket data (ticket_full.csv)
+The ticket model is in `Tickets_weekly_forecast_sarima_tuning.ipynb`, and the work order model is in `Workorders_weekly_forecast_sarima_tuning.ipynb`.
 
-Ticket model: uses all entries
-Work order model: uses only entries where has_work_order = Y
-
-Duration: 26 Dec 2024 to 30 Aug 2026
-
-Model: SARIMA + GLM ensemble (75% GLM, 25% SARIMA) — forecasts weekly volume
-
-Result: 12.64% weekly MAPE (average forecast error) on unseen weeks
-
-Notebooks:
-
-Tickets_weekly_forecast_sarima_tuning.ipynb — tickets
-Workorders_weekly_forecast_sarima_tuning.ipynb — work orders
+The repo is organized under `WO and Ticket Forecasting Version 2`, which has two subfolders: Chile WO Forecasting and Chile Tkt Forecasting. Each subfolder has the same four things — a Python file with the model code, the ticket data, a saved model, and a workflow document.
